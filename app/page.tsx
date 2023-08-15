@@ -11,7 +11,7 @@ export default async function Page({
   }).then((res) => res.json()) as Promise<TFood>;
   return (
     <div>
-      Food: <FoodList foodPromise={foodReq} />
+      <FoodList foodPromise={foodReq} />
     </div>
   );
 }
